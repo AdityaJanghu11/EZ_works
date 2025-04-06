@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZ Works - Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ez.works</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <h2>Explore Our Services</h2>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button onclick="scrollToService(0)">Diagnostic & Consulting</button>
+      <button onclick="scrollToService(1)">Graphics & Video</button>
+      <button onclick="scrollToService(2)">Language & Communication</button>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carousel" class="carousel">
+      <!-- JS will populate 15 cards -->
+    </div>
+
+    <!-- Indicators -->
+    <div class="indicators">
+      <button onclick="scrollToGroup(0)"></button>
+      <button onclick="scrollToGroup(1)"></button>
+      <button onclick="scrollToGroup(2)"></button>
+      <button onclick="scrollToGroup(3)"></button>
+      <button onclick="scrollToGroup(4)"></button>
+      <button onclick="scrollToGroup(5)"></button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 EZ Works. All rights reserved.</p>
+  </footer>
+
+  <template id="card-template">
+    <div class="card">
+      <img src="assets/icons/default.svg" class="card-icon" alt="Icon" />
+      <h3>Capability Name</h3>
+    </div>
+  </template>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

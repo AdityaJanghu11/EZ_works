@@ -1,0 +1,148 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to bottom right, #001e3c, #000);
+  color: #fff;
+}
+
+/* Header */
+.site-header {
+  background: #000e1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  font-weight: bold;
+  color: #f57c00;
+  font-size: 1.5rem;
+}
+
+.site-header nav a {
+  color: #ffffff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-header nav a:hover {
+  color: #f57c00;
+}
+
+/* Section Layout */
+.services-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.tabs button {
+  background: none;
+  border: 1px solid #f57c00;
+  color: #f57c00;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.tabs button:hover {
+  background-color: #f57c00;
+  color: #000;
+}
+
+/* Carousel Styles */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 220px;
+  height: 250px;
+  background: #0c1b2a;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  padding: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Carousel Indicators */
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.indicators button {
+  width: 12px;
+  height: 12px;
+  background: #6b7280;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicators button:hover {
+  background-color: #f57c00;
+}
+
+/* Footer */
+.site-footer {
+  background: #000e1a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 1rem;
+  }
+
+  .card {
+    min-width: 180px;
+    height: 200px;
+  }
+}
